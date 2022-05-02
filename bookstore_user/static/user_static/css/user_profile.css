@@ -1,0 +1,43 @@
+/* .navbar{
+    background-color: #e0f2f1;
+} */
+/* .btn-warning{
+    background-color: #ff6f00;
+    color: white;
+} */
+/* .navbar2{
+    background-color: #00796b;
+} */
+#navbarDropdownMenuLink{
+    color: white;
+    appearance: none;
+}
+.nav-link:hover{
+    text-decoration: underline;
+}
+.dropdowntoggle{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+#carouselExampleIndicators{
+    margin-top: 1em;
+}
+.card{
+    margin-top: 1em;
+}
+.img1{
+    margin-top: 1em;
+    
+}
+.card1{
+    height: 629px;
+}
+.card-body1{
+    margin-top: -3em;
+}
+.card2{
+    height: 641px;
+}
+footer{
+    margin-top: 1em;
+}
