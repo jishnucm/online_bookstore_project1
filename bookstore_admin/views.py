@@ -18,7 +18,7 @@ def sellerlist(request):
 def addseller(request):
     return render(request,'admin/addseller.html')
 
-def orderlist(request):
-    return render(request,'admin/orderlist.html')
-def orderdet(request):
-    return render(request,'admin/orderdetails.html') 
+# def orderlist(request):
+#     return render(request,'admin/orderlist.html')
+# def orderdet(request):
+#     return render(request,'admin/orderdetails.html') 

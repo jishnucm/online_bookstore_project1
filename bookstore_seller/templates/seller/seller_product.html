@@ -1,8 +1,8 @@
 {% extends 'seller/seller_master.html'%}
 {% load static %}
 {% block content %}
-<nav class="navbar navbar-expand-lg navbar-dark bg-light">
-    <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark "  style="background-color: #fbfcff">
+    <div class="container">
         <a class="navbar-brand text-dark font-weight-bold" href="#">Products</a>
         <div class="collapse navbar-collapse" id="navbarResponsive">
         </div>
@@ -28,36 +28,35 @@
                     <a class="dropdown-item" href="#">Archieved</a>
                 </div>
             </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link text-dark" href="#">filter 3</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="#">filter 4</a>
-            </li> -->
-        </ul>
+       
+         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
             <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
 </nav>
-<div class="row text-center" style="padding-top: 26pt;">
+<div class="row text-center" >
  
-    <div class="col-lg-3 col-md-6 mb-4">
+    <div class="col-lg-3 col-md-6 ">
         <div class="card h-100">
-            <img class="card-img-top" src="{% static 'user_static/images/400.jpg' %}">
+            <img class="card-img-top" src="{% static 'seller_static/images/400.jpg' %}">
             <div class="card-body">
                 <h4 class="card-title">missing 400days</h4>
                 <h6>2 in stock</h6>
                 <h6>Status : active</h6>
                 <h6>Vendor : jishnu</h6>
             </div>
-            <div class="card-footer">
+            <div class="card-footer " >
                 <a class="btn btn-primary" id="edit" href="">Edit</a>
                 <button onclick="" class="btn btn-danger">Delete</button>
             </div>
         </div>
+
+
+
+
     </div>
   
-</div>
+</div> 
 {% endblock %}

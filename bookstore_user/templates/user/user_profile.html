@@ -1,75 +1,95 @@
 {% extends 'user/user_master.html'%}
 {% load static %}
 {% block content %}
-<div class="container">
-    <div class="modal fade" id="Cart" >
-     <div class="modal-dialog">
-       <div class="modal-content">
-         <div class="modal-header ">
-           <h5 class="modal-title text-center text-dark" id="exampleModalLabel" style="font-family: 'Courier New', Courier, monospace;font-size:28px; font-weight: bold;">Shopping Cart <i class="fa-solid fa-cart-shopping"></i>
-           </h5>
-           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-             <span aria-hidden="true">&times;</span>
-           </button>
+
+<div class="container-fluid " style="padding-top: 3em;">
+    <div class="row">
+  <div class="left col-md-5 ">
+
+      <div>
+        <i class="fa-solid fa-user fa-5x"></i>
+      </div>
+
+      <div class="second">
+          <h2>Name</h2>
+          <h5>Username</h5>
+          <p>Lorem ipsum dol sapientm explicabo aliquam, minima reprehenderit impedit dolores minus quam debitis voluptates nostrum officiis harum enim nam? Hic.</p>
+      </div>
+
+      <div>
+
+
+          <button type="button" class="btn btn-dark but">edit</button>
+          
+      </div>
+  </div>
+
+
+  <div class=" right col-md-7" >
+      <!-- <div class="nav bg-info">
+          <button type="button" class=" but">Profile</button>
+          <button type="button" class=" but">Profile</button>
+          <button type="button" class=" but">Profile</button>
+
+      </div> -->
+
+      <h3 class="h Normal weight text">Basic Info</h3>
+
+      <form action="" method="post">
+        
+        <div class="col-md-8">
+          <label for="inputName" class="form-label">Name</label>
+          <input type="text" class="form-control" id="inputname">
+        </div>
+        <div class="col-8">
+           <label for="inputAddress" class="form-label">Gender</label>
+           <table class="table col-md-2  table-borderless ">
+        <th>   <input type="radio" class="form-check" id="inputAddress" placeholder="Address"></th>
+        <th>  <label for="inputAddress" class="form-label">Male</label></th>
+        <th> <input type="radio" class="form-check" id="inputAddress" placeholder="Address"></th>
+        <th>   <label for="inputAddress" class="form-label">female</label></th>
+           </table>
          </div>
-         <div class="modal-body " style="background-color: #fafafa;">
-         
-               <div class="col-md-12 d-flex justify-content-center">
-                 <div class="card" style="width: 16rem;">
-                   <img src="lynch2.jpg" class="img-fluid img1  " alt="...">
-                   <div class="card-body">
-                     <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
-                     <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260 </h6>
-                   <div class="card-footer " >
-                    <button type="button">-</button>
-                     <input type="number"  style="width:100px;height: 60px;">
-                     <button type="button"> + </button>
-                   </div>
-                  
-                   <button type="button" class="btn btn-danger mx-5 " >remove</button>
-                   
- 
-               </div>
-                 </div>
-               </div>
-               <div class="col-md-12 d-flex justify-content-center P-3">
-                 <div class="card" style="width: 16rem;margin-top: 6em;">
-                   <img src="lynch2.jpg" class="img-fluid img1  " alt="...">
-                   <div class="card-body">
-                     <h6 class="card-title text-center">Lynchpin:The Best Laid</h6>
-                     <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>260</h6>
-                   <div class="card-footer " >
-                    <button type="button">-</button>
-                     <input type="number"  style="width:100px;height: 60px;">
-                     <button type="button"> + </button>
-                   </div>
-                  
-                   <button type="button" class="btn btn-danger mx-5 " >remove</button>
-                   
- 
-               </div>
-                 </div>
-               </div>
-              <div class="subtotal  d-flex justify-content-between mx-4 " style="background-color: white;margin-top: 6em;">
-                <div>SUBTOTAL</div>
-                <div><i class="fa-solid fa-indian-rupee-sign"></i>520 </div>
-              </div>
-              <div class="subtotal  d-flex justify-content-between mx-4 " style="background-color: white;">
-               <div>ESTIMATED TAX</div>
-               <div><i class="fa-solid fa-indian-rupee-sign"></i>0.00 </div>
-             </div>
+         <div class="col-8">
+           <label for="inputAddress" class="form-label">Date Of BIrth</label>
+           <input type="date" class="form-control" id="inputemail" placeholder="Username">
          </div>
-         <div class="modal-footer d-flex justify-content-between mx-2">
          
-          <div class="order-total">ORDER TOTAL</div>
- 
-          <div class="order-price"> <h6 class="card-text text-center"><i class="fa-solid fa-indian-rupee-sign"></i>520 </h6></div>
+        <div class="col-8">
+          <label for="inputAddress" class="form-label">username</label>
+          <input type="text" class="form-control" id="inputemail" placeholder="Username">
+        </div>
+        <div class="col-8">
+           <label for="inputAddress" class="form-label">Phone No</label>
+           <input type="number" class="form-control" id="inputAddress" placeholder="Phone No">
          </div>
-          <div class="checkout text-center"><input type="submit" class="btn btn-lg bg-secondary" value="CONTINUE TO CHECKOUT" data-dismiss="modal"></div>
-         
-       
-       </div>
-     </div>
-   </div>
-    </div>
-    {% endblock %}
+        <div class="col-8">
+          <label for="inputAddress2" class="form-label">Address </label><br>
+    <textarea name="" id="" cols="62" rows="5"></textarea>
+        </div>
+        <div class="col-8">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity">
+        </div>
+        <br>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">State</label>
+          <select id="inputState" class="form-select">
+            <option selected>Choose...</option>
+            <option>Kerala
+                <OPTION>maharastra
+                    ...</option>
+                    <option>Goa</option>
+                    <option>Karnataka</option>
+                    <option>West Bengal</option>
+          </select>
+        </div>
+        
+        <div class="col-md-12 mt-3">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+       </form>
+  </div>
+</div>
+</div>
+{% endblock %}

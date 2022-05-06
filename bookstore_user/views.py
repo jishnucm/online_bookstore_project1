@@ -7,3 +7,5 @@ def books(request):
     return render(request,'user/user_books.html')
 def payment(request):
     return render(request,'user/user_payment.html')
+def profile(request):
+    return render(request,'user/user_profile.html')    

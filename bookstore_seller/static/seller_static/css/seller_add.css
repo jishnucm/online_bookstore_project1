@@ -17,3 +17,9 @@
 .lh-condensed {
     line-height: 1.25;
 }
+
+.l1{
+    display: inline-block;
+    margin-top: 2em;
+    
+}
